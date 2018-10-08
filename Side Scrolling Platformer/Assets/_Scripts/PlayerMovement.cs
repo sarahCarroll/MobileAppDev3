@@ -7,19 +7,27 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField]
     public int playerSpeed = 10;
     public int playerJump = 1250;
-    private float moveX = 0;
+    public float moveX = 1;
 
 
     // Use this for initialization
     void Start()
     {
+       
     }
 
     // Update is called once per frame
     void Update()
     {
         //frames per second - 
-        playerMove();
+        //playerMove();
+
+        if (Input.GetButtonDown("Jump"))
+        {
+            Jump();
+        }
+
+        gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(moveX, 0) * playerSpeed;
 
         //use mathf.clamp 
         //float newX = mathf.clamp(rb.position.x, -1.95f , +1.95f); change -1.95 and 1.95 to variables get rid of magic numbers
@@ -27,7 +35,7 @@ public class PlayerMovement : MonoBehaviour
         //rb.position = new vector2(newX,rb,potition.y);
 
     }
-    void playerMove()
+    /*void playerMove()
     {
         //controls
         moveX = Input.GetAxis("Horizontal");
@@ -38,7 +46,7 @@ public class PlayerMovement : MonoBehaviour
         //animation
         // Physics
         gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(moveX * playerSpeed, gameObject.GetComponent<Rigidbody2D>().velocity.y);// allows the player to move left and right
-    }
+    }*/
     void Jump()
     {
         //jumping
