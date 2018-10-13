@@ -4,18 +4,21 @@ using UnityEngine;
 //this is used to restart level if player dies
 using UnityEngine.SceneManagement;
 
-public class PlayerHealth : MonoBehaviour {
+public class PlayerHealth : MonoBehaviour
+{
 
     public bool hasDied;
     public int dealthLevel;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start()
+    {
         hasDied = false;
-	}
-	
-	// Update is called once per frame
-	void Update () {
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
         if (gameObject.transform.position.y < dealthLevel)
         {
             hasDied = true;
@@ -27,7 +30,7 @@ public class PlayerHealth : MonoBehaviour {
             //calls the ienumerator die
             StartCoroutine("Die");
         }
-	}
+    }
 
     IEnumerator Die()
     {
