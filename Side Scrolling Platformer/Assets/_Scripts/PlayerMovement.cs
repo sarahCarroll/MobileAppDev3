@@ -27,7 +27,7 @@ public class PlayerMovement : MonoBehaviour
             Jump();
         }
 
-        gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(moveX, 0) * playerSpeed;
+       // gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(moveX, 0) * playerSpeed;
 
         //use mathf.clamp 
         //float newX = mathf.clamp(rb.position.x, -1.95f , +1.95f); change -1.95 and 1.95 to variables get rid of magic numbers
