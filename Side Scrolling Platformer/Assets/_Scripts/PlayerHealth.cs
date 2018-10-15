@@ -9,6 +9,7 @@ public class PlayerHealth : MonoBehaviour
 
     public bool hasDied;
     public int dealthLevel;
+    private bool isGameOver = false;
 
     // Use this for initialization
     void Start()
@@ -19,6 +20,8 @@ public class PlayerHealth : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (isGameOver) return;
+
         if (gameObject.transform.position.y < dealthLevel)
         {
             hasDied = true;
@@ -35,7 +38,9 @@ public class PlayerHealth : MonoBehaviour
     IEnumerator Die()
     {
         //yield return new WaitForSeconds(5);
-        SceneManager.LoadScene("Main");
+        //SceneManager.LoadScene("Main");
+        isGameOver = true;
+        transform.GetComponent<GameController>().GameOver();
 
         yield return null;
     }

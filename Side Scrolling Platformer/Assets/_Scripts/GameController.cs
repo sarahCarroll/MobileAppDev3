@@ -1,6 +1,7 @@
-using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour {
     
@@ -44,9 +45,9 @@ public class GameController : MonoBehaviour {
         gameOverPanel.SetActive(true);
     }
     //Restart using the Fader
-    /*public void Restart() {
-        Initiate.Fade(Application.loadedLevelName,Color.white,2.0f);
-    }*/
+    public void Restart() {
+        SceneManager.LoadScene("Main");
+    }
 
     public void IncrementScore() {
         total++;

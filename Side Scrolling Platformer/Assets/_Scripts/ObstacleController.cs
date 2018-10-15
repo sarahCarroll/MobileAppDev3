@@ -66,10 +66,4 @@ public class ObstacleController : MonoBehaviour {
     {
         freq += 0.01f;
     }
-
-    public void GameOver()
-    {
-        isGameOver = true;
-        transform.GetComponent<GameController>().GameOver();
-    }
 }
