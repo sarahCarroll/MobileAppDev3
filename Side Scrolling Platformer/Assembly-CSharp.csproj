@@ -53,12 +53,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\_Scripts\cameraSystem.cs" />
      <Compile Include="Assets\_Scripts\GameController.cs" />
+     <Compile Include="Assets\_Scripts\LoadSceneOnClick.cs" />
      <Compile Include="Assets\_Scripts\ObstacleController.cs" />
      <Compile Include="Assets\_Scripts\PlayerHealth.cs" />
      <Compile Include="Assets\_Scripts\PlayerMovement.cs" />
      <Compile Include="Assets\_Scripts\PlayerScore.cs" />
-     <Compile Include="Assets\cameraSystem.cs" />
  <Reference Include="UnityEditor.StandardEvents">
  <HintPath>C:/Users/sarahc/Documents/gmit/4th/MobileApplicationDev/MobileAppDev3/Side Scrolling Platformer/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
  </Reference>
