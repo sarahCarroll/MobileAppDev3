@@ -61,16 +61,16 @@
      <Compile Include="Assets\_Scripts\PlayerMovement.cs" />
      <Compile Include="Assets\_Scripts\PlayerScore.cs" />
  <Reference Include="UnityEditor.StandardEvents">
- <HintPath>C:/Users/sarahc/Documents/gmit/4th/MobileApplicationDev/MobileAppDev3/Side Scrolling Platformer/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+ <HintPath>C:/Users/sarahc/Documents/gmit/4th/New folder/MobileAppDev3/Side Scrolling Platformer/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>C:/Users/sarahc/Documents/gmit/4th/MobileApplicationDev/MobileAppDev3/Side Scrolling Platformer/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ <HintPath>C:/Users/sarahc/Documents/gmit/4th/New folder/MobileAppDev3/Side Scrolling Platformer/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.PackageManagerUI.Editor">
- <HintPath>C:/Users/sarahc/Documents/gmit/4th/MobileApplicationDev/MobileAppDev3/Side Scrolling Platformer/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+ <HintPath>C:/Users/sarahc/Documents/gmit/4th/New folder/MobileAppDev3/Side Scrolling Platformer/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
- <HintPath>C:/Users/sarahc/Documents/gmit/4th/MobileApplicationDev/MobileAppDev3/Side Scrolling Platformer/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ <HintPath>C:/Users/sarahc/Documents/gmit/4th/New folder/MobileAppDev3/Side Scrolling Platformer/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/MetroSupport/Tools/UnityEngine.AIModule.dll</HintPath>
