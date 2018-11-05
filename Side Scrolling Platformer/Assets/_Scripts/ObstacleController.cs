@@ -26,7 +26,6 @@ public class ObstacleController : MonoBehaviour {
         }
         else {
             counter -= Time.deltaTime * freq;
-              
         }
 
         //Scrolling (and destroying challenges)
@@ -34,14 +33,14 @@ public class ObstacleController : MonoBehaviour {
         for (int i = 0; i < transform.childCount; i++) {
             childCurrent = transform.GetChild(i).gameObject;
             ScrollChallenge(childCurrent);
-            if (childCurrent.transform.position.x <= -30.0f) {
+            if (childCurrent.transform.position.x <= -20.0f) {
                 Destroy(childCurrent);
             }
         }
 
 	}
 
-    //Scrolling the current obsticle at a speed across the screen
+    //Scrolling the current obstacle at a speed across the screen
     void ScrollChallenge(GameObject currentObstacle) {
         currentObstacle.transform.position -= Vector3.right * (scrollSpeed * Time.deltaTime);
     }

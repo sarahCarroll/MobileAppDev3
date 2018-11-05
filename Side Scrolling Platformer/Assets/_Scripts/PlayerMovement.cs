@@ -5,15 +5,17 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     [SerializeField]
-    public int playerSpeed = 10;
-    public int playerJump = 1250;
+    public int playerSpeed;
+    public float playerJump;
     public float moveX = 1;
+
+    public Rigidbody2D rb;
 
 
     // Use this for initialization
     void Start()
     {
-
+        rb.GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
@@ -22,8 +24,18 @@ public class PlayerMovement : MonoBehaviour
         //frames per second - 
         //playerMove();
 
-        if (Input.GetButtonDown("Jump"))
+        if (rb.position.x < -1)
         {
+            rb.velocity = Vector2.right * playerSpeed;
+        }
+        if (rb.position.x > 1)
+        {
+            rb.velocity = Vector2.left * playerSpeed;
+        }
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            rb.bodyType = RigidbodyType2D.Dynamic;
             Jump();
         }
 
@@ -50,7 +62,8 @@ public class PlayerMovement : MonoBehaviour
     void Jump()
     {
         //jumping
-        GetComponent<Rigidbody2D>().AddForce(Vector2.up * playerJump);
+        Debug.Log("Jump");
+        rb.velocity = Vector2.up * playerJump;
 
 
     }
