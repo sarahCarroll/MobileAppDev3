@@ -9,6 +9,9 @@ public class ObstacleController : MonoBehaviour {
     public float freq = 0.5f;
     float counter = 0.0f;
     bool isGameOver = false;
+    int randomSpawn;
+    Vector3 spawnPoint;
+
 
     // Used in initialization
     void Start () {
@@ -49,7 +52,11 @@ public class ObstacleController : MonoBehaviour {
     //created challenge is still perfectly inline with parent axis
     //sets counter to 1
     void CreateRandomObstacle() {
-        GameObject newChallenge = Instantiate(challenges[Random.Range(0, challenges.Length)], obstacleSpawner.position, Quaternion.identity) as GameObject;
+        randomSpawn = Random.Range(-5, 5);//random number between -5 and 4  because parses down to int
+        spawnPoint = obstacleSpawner.position;
+        spawnPoint.y += randomSpawn;
+
+        GameObject newChallenge = Instantiate(challenges[Random.Range(0, challenges.Length)], spawnPoint, Quaternion.identity) as GameObject;
         newChallenge.transform.parent = transform;
         counter = 1.0f;
     }

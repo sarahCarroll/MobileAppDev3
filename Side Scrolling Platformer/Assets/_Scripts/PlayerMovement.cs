@@ -4,13 +4,10 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    [SerializeField]
     public int playerSpeed;
     public float playerJump;
-    public float moveX = 1;
 
     public Rigidbody2D rb;
-
 
     // Use this for initialization
     void Start()
@@ -28,10 +25,7 @@ public class PlayerMovement : MonoBehaviour
         {
             rb.velocity = Vector2.right * playerSpeed;
         }
-        if (rb.position.x > 1)
-        {
-            rb.velocity = Vector2.left * playerSpeed;
-        }
+       
 
         if (Input.GetKeyDown(KeyCode.Space))
         {

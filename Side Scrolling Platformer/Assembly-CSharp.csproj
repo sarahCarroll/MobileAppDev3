@@ -57,6 +57,7 @@
      <Compile Include="Assets\_Scripts\GameController.cs" />
      <Compile Include="Assets\_Scripts\LoadSceneOnClick.cs" />
      <Compile Include="Assets\_Scripts\ObstacleController.cs" />
+     <Compile Include="Assets\_Scripts\Pause.cs" />
      <Compile Include="Assets\_Scripts\PlayerHealth.cs" />
      <Compile Include="Assets\_Scripts\PlayerMovement.cs" />
      <Compile Include="Assets\_Scripts\PlayerScore.cs" />
