@@ -26,6 +26,7 @@ public class PlayerHealth : MonoBehaviour
         {
             hasDied = true;
             Debug.Log("player has died");
+            Die();
         }
 
         if (hasDied == true)
@@ -38,9 +39,10 @@ public class PlayerHealth : MonoBehaviour
     IEnumerator Die()
     {
         //yield return new WaitForSeconds(5);
-        //SceneManager.LoadScene("Main");
+        
         isGameOver = true;
-        transform.GetComponent<GameController>().GameOver();
+        //transform.GetComponent<GameController>().GameOver();
+        SceneManager.LoadScene("Main");
 
         yield return null;
     }
