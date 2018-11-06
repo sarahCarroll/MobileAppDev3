@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/ClosingMenu.unity
+    guid: d5b3c3c230292404fa4b0f7708924cd2
   m_configObjects: {}

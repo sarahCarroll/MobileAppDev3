@@ -39,10 +39,10 @@ public class PlayerHealth : MonoBehaviour
     IEnumerator Die()
     {
         //yield return new WaitForSeconds(5);
-        
+        Time.timeScale = 0.0f;
         isGameOver = true;
         //transform.GetComponent<GameController>().GameOver();
-        SceneManager.LoadScene("Main");
+        SceneManager.LoadScene("ClosingMenu");
 
         yield return null;
     }
