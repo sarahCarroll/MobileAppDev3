@@ -1,10 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class AudioController : MonoBehaviour {
 
     public bool musicIsPlaying = true;
+
+    public Slider volumeSlider;
 
     public void mute()
     {
@@ -20,6 +23,11 @@ public class AudioController : MonoBehaviour {
         }
            
         
+    }
+
+    public void volume()
+    {
+        AudioListener.volume = volumeSlider.value;
     }
 
 	// Use this for initialization
