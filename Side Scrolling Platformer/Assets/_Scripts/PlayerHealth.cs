@@ -7,9 +7,10 @@ using UnityEngine.SceneManagement;
 public class PlayerHealth : MonoBehaviour
 {
 
-    public bool hasDied;
-    public int dealthLevel;
-    private bool isGameOver = false;
+    public bool hasDied; // boolean valiable to detemine character dead or alive
+    public int dealthLevely; // the x axis point to which the character dies
+    public int dealthLevelx; // the x axis point to which the character dies
+    private bool isGameOver = false; // boolean detemineing game over
 
     // Use this for initialization
     void Start()
@@ -22,7 +23,7 @@ public class PlayerHealth : MonoBehaviour
     {
         if (isGameOver) return;
 
-        if (gameObject.transform.position.y < dealthLevel)
+        if (gameObject.transform.position.y < dealthLevely || gameObject.transform.position.x < dealthLevelx)
         {
             hasDied = true;
             Debug.Log("player has died");

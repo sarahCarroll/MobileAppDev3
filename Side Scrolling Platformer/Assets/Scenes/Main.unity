@@ -782,11 +782,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3b8189e33f8a9c4cb2f5c4799b8fe1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameOverPanel: {fileID: 0}
-  textScore: {fileID: 0}
-  textBest: {fileID: 0}
-  textCurrent: {fileID: 0}
-  newScore: {fileID: 0}
 --- !u!114 &1185090689
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1079,7 +1074,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hasDied: 0
-  dealthLevel: -7
+  dealthLevely: -10
+  dealthLevelx: -10
 --- !u!114 &1289077223
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1092,6 +1088,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreText: {fileID: 1246177143}
+  highText: {fileID: 0}
   elaspedTime: 0
 --- !u!66 &1289077224
 CompositeCollider2D:
@@ -1817,3 +1814,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   musicIsPlaying: 1
+  volumeSlider: {fileID: 0}
