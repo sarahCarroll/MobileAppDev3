@@ -56,7 +56,6 @@
      <Compile Include="Assets\_Scripts\Audio.cs" />
      <Compile Include="Assets\_Scripts\AudioController.cs" />
      <Compile Include="Assets\_Scripts\cameraSystem.cs" />
-     <Compile Include="Assets\_Scripts\GameController.cs" />
      <Compile Include="Assets\_Scripts\GameOver.cs" />
      <Compile Include="Assets\_Scripts\LoadSceneOnClick.cs" />
      <Compile Include="Assets\_Scripts\ObstacleController.cs" />
