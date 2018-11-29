@@ -4,8 +4,15 @@ using UnityEngine;
 
 public class Audio : MonoBehaviour {
 
-	private void Awake()
+    public bool musicIsPlaying = true;
+
+    private void Awake()
     {
-        DontDestroyOnLoad(transform.gameObject);
+        if (musicIsPlaying)
+        {
+            DontDestroyOnLoad(transform.gameObject);
+        }
+       
+       
     }
 }

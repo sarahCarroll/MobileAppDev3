@@ -5,21 +5,21 @@ using UnityEngine.UI;
 
 public class AudioController : MonoBehaviour {
 
-    public bool musicIsPlaying = true;
+    public bool musicIsPlaying = true; // boolean to say if music is playing
 
-    public Slider volumeSlider;
+    public Slider volumeSlider; // defines volume slider
 
     public void mute()
     {
-        if (musicIsPlaying)
+        if (musicIsPlaying)// is the number player = true
         {
-            AudioListener.pause = true;
-            musicIsPlaying = false;
+            AudioListener.pause = true; //pause music
+            musicIsPlaying = false; //set music playing to false
         }
         else
         {
-            AudioListener.pause = false;
-            musicIsPlaying = true;
+            AudioListener.pause = false; //resume music
+            musicIsPlaying = true; //set music playing to true
         }
            
         
@@ -27,16 +27,6 @@ public class AudioController : MonoBehaviour {
 
     public void volume()
     {
-        AudioListener.volume = volumeSlider.value;
+        AudioListener.volume = volumeSlider.value; //ajust the volume of the music by the volume slider
     }
-
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
 }

@@ -3,9 +3,9 @@ using System.Collections;
 
 public class ObstacleController : MonoBehaviour {
 
-    public GameObject[] challenges;
-    public float scrollSpeed = 5.0f;
-    public Transform obstacleSpawner;
+    public GameObject[] challenges; // array of platforms being procedually generated
+    public float scrollSpeed ; // speed that the platforms come on screen at
+    public Transform obstacleSpawner; // positions the platforms are loacted
     public float freq = 0.5f;
     float counter = 0.0f;
     bool isGameOver = false;
@@ -65,11 +65,28 @@ public class ObstacleController : MonoBehaviour {
 
     public void AdjustScrollSpeed()
     {
-       scrollSpeed += 0.2f;
+        if (Time.deltaTime > 30.0f)
+        {
+            scrollSpeed += 0.5f;
+        }
+        if (Time.deltaTime > 60.0f)
+        {
+            scrollSpeed += 2.5f;
+        }
+
     }
 
     public void AdjustFrequency()
     {
-        freq += 0.01f;
+        if (Time.deltaTime > 30.0f)
+        {
+            freq += 0.5f;
+        }
+
+        if (Time.deltaTime > 60.0f)
+        {
+            freq += 1.5f;
+        }
+
     }
 }

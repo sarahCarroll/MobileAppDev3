@@ -5,17 +5,13 @@ using UnityEngine.UI;
 
 public class GameOver : MonoBehaviour {
 
-    public Text scoreText;
-    public Text highText;
+    public Text scoreText; // text last score 
+    public Text highText; // text high score
 
     // Use this for initialization
     void Start () {
-        highText.text = PlayerPrefs.GetInt("highScore").ToString();
-        scoreText.text = PlayerPrefs.GetInt("score").ToString();
+        highText.text = PlayerPrefs.GetInt("highScore").ToString(); // print out the players highscore
+        scoreText.text = PlayerPrefs.GetInt("score").ToString(); //print players last score achived
     }
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+
 }
