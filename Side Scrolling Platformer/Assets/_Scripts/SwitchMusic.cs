@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SwitchMusic : MonoBehaviour {
 
-    public AudioClip newTrack;
+    //public AudioClip newTrack;
 
     private Audio theAM;
 
@@ -14,14 +14,11 @@ public class SwitchMusic : MonoBehaviour {
         theAM = FindObjectOfType<Audio>();
 	}
 	
-	void OnTriggerEnter2D(Collider2D other)
+	public void ChangeMusic(AudioClip newTrack)
     {
-        if(other.tag == "Player")
-        {
             if(newTrack!= null)
             {
                 theAM.changeBackgroundMusic(newTrack);
             }
-        }
     }
 }

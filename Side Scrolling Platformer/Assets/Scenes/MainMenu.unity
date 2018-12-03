@@ -435,6 +435,11 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 114059538764329006, guid: 1952cc67de765ef4a9b67d8cac3c6431,
+        type: 2}
+      propertyPath: m_Text
+      value: Change Music
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1952cc67de765ef4a9b67d8cac3c6431, type: 2}
   m_IsPrefabAsset: 0
