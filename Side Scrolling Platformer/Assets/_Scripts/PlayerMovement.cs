@@ -19,7 +19,7 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        //rb.freezeRotation = true; this is how to make his static, but i enjoy him spinning :D
         //frames per second - 
         //playerMove();
 
