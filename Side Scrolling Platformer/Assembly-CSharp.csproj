@@ -65,6 +65,7 @@
      <Compile Include="Assets\_Scripts\PlayerMovement.cs" />
      <Compile Include="Assets\_Scripts\PlayerScore.cs" />
      <Compile Include="Assets\_Scripts\SplashController.cs" />
+     <Compile Include="Assets\_Scripts\SwitchMusic.cs" />
  <Reference Include="UnityEditor.StandardEvents">
  <HintPath>C:/Users/sarahc/Documents/gmit/4th/New folder/MobileAppDev3/Side Scrolling Platformer/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
  </Reference>

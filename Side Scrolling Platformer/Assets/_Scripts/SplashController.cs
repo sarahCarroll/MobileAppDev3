@@ -14,7 +14,7 @@ public class SplashController : MonoBehaviour {
     {
         Debug.Log("enter splashscreenController");
         yield return new WaitForSeconds(1);
-        SceneManager.LoadScene(0);// Load main menu after 2 seconds
+        SceneManager.LoadScene(1);// Load main menu after 2 seconds
         Debug.Log("loaded scene 0");
 
     }

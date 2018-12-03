@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/SplashScreen.unity
+    guid: 685a53dbcd6d099468b190080c5957df
+  - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: 1a80e7446e45ac0438fdbe868103dace
   - enabled: 1
@@ -21,6 +24,6 @@ EditorBuildSettings:
     path: Assets/Scenes/ClosingMenu.unity
     guid: d5b3c3c230292404fa4b0f7708924cd2
   - enabled: 1
-    path: Assets/Scenes/SplashScreen.unity
-    guid: 685a53dbcd6d099468b190080c5957df
+    path: Assets/Scenes/Unlockable.unity
+    guid: 08b8a0290b37e3641a2b35b88bc26ba2
   m_configObjects: {}
