@@ -32,9 +32,9 @@ public class Pause : MonoBehaviour {
 
     public void PauseGame()
     {
-        Debug.Log("teest");
         //when pause want to set the pauseGame = true
         PauseMenu.SetActive(true);
+        Debug.Log("teest");
         Time.timeScale = 0.0f;// stopping time
         GamePause = true;
     }

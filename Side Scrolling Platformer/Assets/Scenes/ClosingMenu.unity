@@ -297,7 +297,7 @@ AudioListener:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 534669902}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!20 &534669904
 Camera:
   m_ObjectHideFlags: 0
@@ -403,7 +403,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.25, y: 0.2}
   m_AnchorMax: {x: 0.75, y: 0.8}
-  m_AnchoredPosition: {x: -44.604996, y: -30.123993}
+  m_AnchoredPosition: {x: -44.60498, y: -30.123993}
   m_SizeDelta: {x: 0, y: 0.000015259}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &767869011
@@ -1200,7 +1200,7 @@ AudioSource:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2098875715}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 57211c669fe43fb44b38ee30e518bf5a, type: 3}
@@ -1313,3 +1313,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0b646f1532f63b43bc468a95e0c167e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  musicIsPlaying: 1

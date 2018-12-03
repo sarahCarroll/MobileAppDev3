@@ -996,6 +996,8 @@ MonoBehaviour:
   challenges:
   - {fileID: 1198957186338742, guid: ae507491c6a7d0a4f8e0cf3ab308a14f, type: 2}
   - {fileID: 1236552872333750, guid: 68a323aab1a4cbc41acf3de1c3942ea0, type: 2}
+  - {fileID: 1857185956899030, guid: 6ea2ca2f36f4159439a7a0b3e75af9bc, type: 2}
+  - {fileID: 1498660968678278, guid: a747e198801613842bce6109d5128903, type: 2}
   scrollSpeed: 5
   obstacleSpawner: {fileID: 1907033801}
   freq: 0.5
@@ -1239,7 +1241,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 3fbf82a4b3cf75c48b676a536d36ad34, type: 3}
-  m_Color: {r: 0.9245283, g: 0.28518113, b: 0.22241008, a: 1}
+  m_Color: {r: 0.962464, g: 1, b: 0.3443396, a: 0.92156863}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1288,7 +1290,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreText: {fileID: 1246177143}
-  highText: {fileID: 0}
+  highText: {fileID: 1246177143}
   elaspedTime: 0
 --- !u!66 &1289077224
 CompositeCollider2D:
