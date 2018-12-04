@@ -16,9 +16,20 @@ public class PlayerScore : MonoBehaviour {
 	void Start () {
         PlayerPrefs.SetInt("score", 0);
 	}
-	
-	// Update is called once per frame
-	void Update () {
+
+    private void OnTriggerEnter2D(Collider2D Enemy)
+    {
+        if (GameObject.FindWithTag("enemy"))
+        {
+            // PlayerPrefs.SetInt("score") -= 5f;
+            Debug.LogWarning("enemy hit");
+            Destroy(GameObject.FindWithTag("enemy"));
+        }
+        //Destroy(transform.gameObject);
+    }
+
+    // Update is called once per frame
+    void Update () {
         elaspedTime += Time.deltaTime;
         Debug.Log(elaspedTime);
         PlayerPrefs.SetInt("score",(int)elaspedTime);

@@ -343,7 +343,7 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
 --- !u!61 &258937113
 BoxCollider2D:
@@ -1164,6 +1164,7 @@ MonoBehaviour:
   - {fileID: 1236552872333750, guid: 68a323aab1a4cbc41acf3de1c3942ea0, type: 2}
   - {fileID: 1857185956899030, guid: 6ea2ca2f36f4159439a7a0b3e75af9bc, type: 2}
   - {fileID: 1498660968678278, guid: a747e198801613842bce6109d5128903, type: 2}
+  enemy: {fileID: 1177430541586180, guid: c3f3a3d7ef2edde42b7949fa42918894, type: 2}
   scrollSpeed: 5
   obstacleSpawner: {fileID: 1907033801}
   freq: 0.25

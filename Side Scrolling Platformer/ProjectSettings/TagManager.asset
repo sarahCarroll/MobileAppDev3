@@ -7,6 +7,8 @@ TagManager:
   - Platform
   - Ground
   - base
+  - audioManager
+  - enemy
   layers:
   - Default
   - TransparentFX

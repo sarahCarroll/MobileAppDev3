@@ -7,12 +7,21 @@ public class Audio : MonoBehaviour {
     public bool musicIsPlaying = true;
     public AudioSource backgroundMusic;
 
+    int counter = 0;
+
     static Audio instance = null;
+
+    void Start()
+    {
+        
+    }
 
 
 
     private void Awake()
     {
+
+        
 
         /*if (instance != false)
         {
@@ -33,11 +42,13 @@ public class Audio : MonoBehaviour {
             DontDestroyOnLoad(transform.gameObject);
         }
 
-        else if (FindObjectsOfType(typeof(Audio)).Length > 1)
+        if (FindObjectsOfType(typeof(Audio)).Length > 1)
         {
-            Destroy(transform.gameObject);
+            //Destroy(transform.gameObject);
             return; // don't allow code to continue executing since we're destroy this "extra" copy.
         }
+
+       
 
         var _audio = this.GetComponent<AudioSource>();
         if (_audio.clip != null && _audio.time == 0)
@@ -45,14 +56,17 @@ public class Audio : MonoBehaviour {
             _audio.Play();
         }
     }
+    
 
     public void changeBackgroundMusic(AudioClip music)
     {
-        Debug.Log("change mussic");
-        backgroundMusic.Stop();
-        backgroundMusic.clip = music;
-        backgroundMusic.Play();
-
+        
+            Debug.Log("change mussic");
+            //Destroy(gameObject);
+            backgroundMusic.Pause();
+            backgroundMusic.clip = music;
+            backgroundMusic.Play();
+        
     }
 
   

@@ -4,12 +4,14 @@ using System.Collections;
 public class ObstacleController : MonoBehaviour {
 
     public GameObject[] challenges; // array of platforms being procedually generated
+    public GameObject enemy;
     public float scrollSpeed ; // speed that the platforms come on screen at
     public Transform obstacleSpawner; // positions the platforms are loacted
     public float freq = 0.5f;
     float counter = 0.0f;
     bool isGameOver = false;
     int randomSpawn;
+    int randomRange;
     Vector3 spawnPoint;
 
 
@@ -54,12 +56,22 @@ public class ObstacleController : MonoBehaviour {
     //sets counter to 1
     void CreateRandomObstacle() {
         randomSpawn = Random.Range(-5, 5);//random number between -5 and 4  because parses down to int
+        randomRange = Random.Range(1, 3);
         spawnPoint = obstacleSpawner.position;
         spawnPoint.y += randomSpawn;
+
+
 
         GameObject newChallenge = Instantiate(challenges[Random.Range(0, challenges.Length)], spawnPoint, Quaternion.identity) as GameObject;
         newChallenge.transform.parent = transform;
         counter = 1.0f;
+
+        if (randomRange < 2)
+        {
+            spawnPoint.y +=  2;
+            GameObject enemySpawn = Instantiate(enemy, spawnPoint, Quaternion.identity) as GameObject;
+            enemySpawn.transform.parent = transform;
+        }
     }
 
     

@@ -326,6 +326,7 @@ GameObject:
   - component: {fileID: 398764352}
   - component: {fileID: 398764351}
   - component: {fileID: 398764350}
+  - component: {fileID: 398764353}
   m_Layer: 5
   m_Name: First time in Forever
   m_TagString: Untagged
@@ -393,13 +394,12 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1587575075}
+      - m_Target: {fileID: 398764353}
         m_MethodName: ChangeMusic
-        m_Mode: 2
+        m_Mode: 1
         m_Arguments:
-          m_ObjectArgument: {fileID: 8300000, guid: 74786d1d1c3569141b6d0e882bea9784,
-            type: 3}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -443,6 +443,18 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 398764348}
   m_CullTransparentMesh: 0
+--- !u!114 &398764353
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 398764348}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db1c085c7d5d9874da8fbb26dfff8f5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  music: {fileID: 8300000, guid: 74786d1d1c3569141b6d0e882bea9784, type: 3}
 --- !u!1 &448803554
 GameObject:
   m_ObjectHideFlags: 0
@@ -609,6 +621,7 @@ GameObject:
   - component: {fileID: 816818916}
   - component: {fileID: 816818915}
   - component: {fileID: 816818914}
+  - component: {fileID: 816818917}
   m_Layer: 5
   m_Name: In Summer
   m_TagString: Untagged
@@ -676,13 +689,12 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1587575075}
+      - m_Target: {fileID: 816818917}
         m_MethodName: ChangeMusic
-        m_Mode: 2
+        m_Mode: 1
         m_Arguments:
-          m_ObjectArgument: {fileID: 8300000, guid: 82aa8ca793881de4c91cd2573f432a4f,
-            type: 3}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -726,6 +738,18 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 816818912}
   m_CullTransparentMesh: 0
+--- !u!114 &816818917
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 816818912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db1c085c7d5d9874da8fbb26dfff8f5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  music: {fileID: 8300000, guid: 82aa8ca793881de4c91cd2573f432a4f, type: 3}
 --- !u!1 &977837497
 GameObject:
   m_ObjectHideFlags: 0
@@ -738,6 +762,7 @@ GameObject:
   - component: {fileID: 977837501}
   - component: {fileID: 977837500}
   - component: {fileID: 977837499}
+  - component: {fileID: 977837502}
   m_Layer: 5
   m_Name: Let it go
   m_TagString: Untagged
@@ -805,13 +830,12 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1587575075}
+      - m_Target: {fileID: 977837502}
         m_MethodName: ChangeMusic
-        m_Mode: 2
+        m_Mode: 1
         m_Arguments:
-          m_ObjectArgument: {fileID: 8300000, guid: 57211c669fe43fb44b38ee30e518bf5a,
-            type: 3}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -855,6 +879,18 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 977837497}
   m_CullTransparentMesh: 0
+--- !u!114 &977837502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 977837497}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db1c085c7d5d9874da8fbb26dfff8f5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  music: {fileID: 8300000, guid: 57211c669fe43fb44b38ee30e518bf5a, type: 3}
 --- !u!1 &988077151
 GameObject:
   m_ObjectHideFlags: 0
@@ -1092,112 +1128,6 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1493678211}
   m_CullTransparentMesh: 0
---- !u!1001 &1587575073
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 224316358512636330, guid: e212ea762360cb34fb60fedaa15d827b,
-        type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224316358512636330, guid: e212ea762360cb34fb60fedaa15d827b,
-        type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224316358512636330, guid: e212ea762360cb34fb60fedaa15d827b,
-        type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224316358512636330, guid: e212ea762360cb34fb60fedaa15d827b,
-        type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224316358512636330, guid: e212ea762360cb34fb60fedaa15d827b,
-        type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224316358512636330, guid: e212ea762360cb34fb60fedaa15d827b,
-        type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224316358512636330, guid: e212ea762360cb34fb60fedaa15d827b,
-        type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 224316358512636330, guid: e212ea762360cb34fb60fedaa15d827b,
-        type: 2}
-      propertyPath: m_RootOrder
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 224316358512636330, guid: e212ea762360cb34fb60fedaa15d827b,
-        type: 2}
-      propertyPath: m_AnchoredPosition.x
-      value: 640
-      objectReference: {fileID: 0}
-    - target: {fileID: 224316358512636330, guid: e212ea762360cb34fb60fedaa15d827b,
-        type: 2}
-      propertyPath: m_AnchoredPosition.y
-      value: 400
-      objectReference: {fileID: 0}
-    - target: {fileID: 224316358512636330, guid: e212ea762360cb34fb60fedaa15d827b,
-        type: 2}
-      propertyPath: m_SizeDelta.x
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 224316358512636330, guid: e212ea762360cb34fb60fedaa15d827b,
-        type: 2}
-      propertyPath: m_SizeDelta.y
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 224316358512636330, guid: e212ea762360cb34fb60fedaa15d827b,
-        type: 2}
-      propertyPath: m_AnchorMin.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 224316358512636330, guid: e212ea762360cb34fb60fedaa15d827b,
-        type: 2}
-      propertyPath: m_AnchorMin.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 224316358512636330, guid: e212ea762360cb34fb60fedaa15d827b,
-        type: 2}
-      propertyPath: m_AnchorMax.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 224316358512636330, guid: e212ea762360cb34fb60fedaa15d827b,
-        type: 2}
-      propertyPath: m_AnchorMax.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 224316358512636330, guid: e212ea762360cb34fb60fedaa15d827b,
-        type: 2}
-      propertyPath: m_Pivot.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 224316358512636330, guid: e212ea762360cb34fb60fedaa15d827b,
-        type: 2}
-      propertyPath: m_Pivot.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: e212ea762360cb34fb60fedaa15d827b, type: 2}
-  m_IsPrefabAsset: 0
---- !u!114 &1587575075 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 114403407962611678, guid: e212ea762360cb34fb60fedaa15d827b,
-    type: 2}
-  m_PrefabInternal: {fileID: 1587575073}
-  m_Script: {fileID: 11500000, guid: 781955865024c6e46b797b2412821958, type: 3}
 --- !u!1 &1726822063
 GameObject:
   m_ObjectHideFlags: 0
