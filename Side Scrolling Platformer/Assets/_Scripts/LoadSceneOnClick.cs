@@ -9,5 +9,6 @@ public class LoadSceneOnClick : MonoBehaviour {
     {
         Time.timeScale = 1.0f; // begin time in the game when game starts
         SceneManager.LoadScene(sceneIndex); //call this function in the onclick and choose given index of scene
+        Debug.Log("scene changed");
     }
 }

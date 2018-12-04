@@ -16,6 +16,7 @@ public class ObstacleController : MonoBehaviour {
     // Used in initialization
     void Start () {
         CreateRandomObstacle();
+        StartCoroutine(AdjustFrequency());
 	}
 	
 	// Update checker
@@ -63,30 +64,19 @@ public class ObstacleController : MonoBehaviour {
 
     
 
-    public void AdjustScrollSpeed()
+
+    public IEnumerator AdjustFrequency()
     {
-        if (Time.deltaTime > 30.0f)
-        {
-            scrollSpeed += 0.5f;
-        }
-        if (Time.deltaTime > 60.0f)
-        {
-            scrollSpeed += 2.5f;
-        }
+        //wait for 20 seconds an d increase speed of obsticals 
+        yield return new WaitForSecondsRealtime(20f);
+        freq += 0.25f;
 
-    }
+        //wait a further 50 seconds and increase speed again
+        yield return new WaitForSecondsRealtime(50f);
+        freq += 0.50f;
 
-    public void AdjustFrequency()
-    {
-        if (Time.deltaTime > 30.0f)
-        {
-            freq += 0.5f;
-        }
-
-        if (Time.deltaTime > 60.0f)
-        {
-            freq += 1.5f;
-        }
+        yield return new WaitForSecondsRealtime(5f);
+        freq += .05f;
 
     }
 }

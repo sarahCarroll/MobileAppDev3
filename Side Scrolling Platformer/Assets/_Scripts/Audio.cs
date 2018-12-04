@@ -7,11 +7,42 @@ public class Audio : MonoBehaviour {
     public bool musicIsPlaying = true;
     public AudioSource backgroundMusic;
 
+    static Audio instance = null;
+
+
+
     private void Awake()
     {
+
+        /*if (instance != false)
+        {
+            Destroy(gameObject);
+            Debug.Log("destroy music");
+
+        }
+            
+
+        else if(instance == false)
+        {
+            instance = this;
+            GameObject.DontDestroyOnLoad(gameObject);
+            Debug.Log("play music");
+        }*/
         if (musicIsPlaying)
         {
             DontDestroyOnLoad(transform.gameObject);
+        }
+
+        else if (FindObjectsOfType(typeof(Audio)).Length > 1)
+        {
+            Destroy(transform.gameObject);
+            return; // don't allow code to continue executing since we're destroy this "extra" copy.
+        }
+
+        var _audio = this.GetComponent<AudioSource>();
+        if (_audio.clip != null && _audio.time == 0)
+        { // check if audio clip assigned and only do this if it hasn't started playing yet (position == 0)
+            _audio.Play();
         }
     }
 
@@ -23,4 +54,6 @@ public class Audio : MonoBehaviour {
         backgroundMusic.Play();
 
     }
+
+  
 }

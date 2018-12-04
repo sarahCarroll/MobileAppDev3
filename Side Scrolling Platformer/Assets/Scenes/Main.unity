@@ -1166,7 +1166,7 @@ MonoBehaviour:
   - {fileID: 1498660968678278, guid: a747e198801613842bce6109d5128903, type: 2}
   scrollSpeed: 5
   obstacleSpawner: {fileID: 1907033801}
-  freq: 0.5
+  freq: 0.25
 --- !u!4 &1185090690
 Transform:
   m_ObjectHideFlags: 0
