@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -7,6 +8,8 @@ public class PlayerScore : MonoBehaviour {
 
     public Text scoreText;
     public Text highText;
+    public Text timeText;
+    
 
 
     [SerializeField]
@@ -24,6 +27,11 @@ public class PlayerScore : MonoBehaviour {
             // PlayerPrefs.SetInt("score") -= 5f;
             Debug.LogWarning("enemy hit");
             Destroy(GameObject.FindWithTag("enemy"));
+
+            float newScore = elaspedTime -= 5f;
+
+           // PlayerPrefs.SetInt("score", (int)newScore);
+           // scoreText.text = PlayerPrefs.GetInt("score").ToString();
         }
         //Destroy(transform.gameObject);
     }
@@ -34,7 +42,7 @@ public class PlayerScore : MonoBehaviour {
         Debug.Log(elaspedTime);
         PlayerPrefs.SetInt("score",(int)elaspedTime);
         scoreText.text = PlayerPrefs.GetInt("score").ToString();
-        Debug.Log(scoreText.text);
+       // Debug.Log(scoreText.text);
 
         if (PlayerPrefs.GetInt("score") > PlayerPrefs.GetInt("highScore"))
         {
