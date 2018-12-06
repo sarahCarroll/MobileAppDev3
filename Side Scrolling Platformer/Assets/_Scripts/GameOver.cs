@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class GameOver : MonoBehaviour {
 
-    public Text scoreText; // text last score 
+    public Text scoreText; // text last score achieved
     public Text highText; // text high score
 
     // Use this for initialization

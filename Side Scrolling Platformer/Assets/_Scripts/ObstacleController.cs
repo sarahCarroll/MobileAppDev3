@@ -56,19 +56,21 @@ public class ObstacleController : MonoBehaviour {
     //sets counter to 1
     void CreateRandomObstacle() {
         randomSpawn = Random.Range(-5, 5);//random number between -5 and 4  because parses down to int
-        randomRange = Random.Range(1, 3);
+        randomRange = Random.Range(1, 3);// random range for enemy to spawn
         spawnPoint = obstacleSpawner.position;
         spawnPoint.y += randomSpawn;
 
 
-
+        //The platforms are randomly generated platform from the array of challenges
         GameObject newChallenge = Instantiate(challenges[Random.Range(0, challenges.Length)], spawnPoint, Quaternion.identity) as GameObject;
         newChallenge.transform.parent = transform;
+        //make counter =1
         counter = 1.0f;
 
         if (randomRange < 2)
         {
             spawnPoint.y +=  2;
+            //spawn enemies
             GameObject enemySpawn = Instantiate(enemy, spawnPoint, Quaternion.identity) as GameObject;
             enemySpawn.transform.parent = transform;
         }
@@ -87,6 +89,7 @@ public class ObstacleController : MonoBehaviour {
         yield return new WaitForSecondsRealtime(50f);
         freq += 0.50f;
 
+        //wait a further 5 seconds and increase speed again
         yield return new WaitForSecondsRealtime(5f);
         freq += .05f;
 
